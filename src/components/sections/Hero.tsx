@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
-import heroImage from "../../assets/images/Hero.png";
+import heroImage from "../../assets/images/hero.png";
 
 function Hero() {
   return (
