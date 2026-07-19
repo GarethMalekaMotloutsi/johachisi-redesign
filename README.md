@@ -2,33 +2,36 @@
 
 <div align="center">
 
-### A modern, responsive construction company website built with React, TypeScript, Vite and Tailwind CSS.
+### A responsive construction company website built with React, TypeScript, Vite and Tailwind CSS.
 
-**Live Demo:** https://YOUR-VERCEL-LINK.vercel.app
+**Live Demo:** https://johachisi-redesign-b819.vercel.app
 
 </div>
 
 ---
 
-## 📖 Overview
+## 📖 About the Project
 
-Johachisi Construction Website is a modern corporate website developed to showcase the company's construction services, completed projects, and contact information. The application focuses on providing a professional online presence while demonstrating modern front-end development practices.
+This project is a redesign of the Johachisi Construction website. The goal was to create a modern, responsive website that better represents the company while improving the overall user experience.
 
-This project was developed using React, TypeScript, Vite and Tailwind CSS as part of my software development portfolio.
+The website was built using React, TypeScript and Tailwind CSS, with a focus on reusable components, responsive layouts and clean design. Framer Motion was used to add subtle animations that improve the overall feel of the website without affecting performance.
+
+This project was completed as part of my software development portfolio and demonstrates my understanding of modern front-end development practices.
 
 ---
 
 ## ✨ Features
 
-- Responsive design for desktop, tablet and mobile devices
-- Modern landing page with animated hero section
-- About section introducing the company
-- Services section highlighting construction expertise
-- Featured projects portfolio
-- Contact section with company information
-- Professional footer with quick navigation
+- Fully responsive design
+- Modern landing page with a hero section
+- Company information (About section)
+- Services section
+- Featured projects section
+- Contact section
 - Smooth scrolling navigation
-- Modern UI with Framer Motion animations
+- Responsive navigation bar
+- Framer Motion animations
+- Clean and reusable React component structure
 
 ---
 
@@ -43,7 +46,7 @@ This project was developed using React, TypeScript, Vite and Tailwind CSS as par
 
 ---
 
-## 📂 Project Structure
+## 📁 Folder Structure
 
 ```text
 src
@@ -73,33 +76,33 @@ src
 
 ---
 
-## 🚀 Installation
+## 🚀 Getting Started
 
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPOSITORY.git
-```
-
-Navigate into the project:
+Clone the repository
 
 ```bash
-cd YOUR-REPOSITORY
+git clone https://github.com/GarethMalekaMotloutsi/johachisi-redesign.git
 ```
 
-Install dependencies:
+Move into the project folder
+
+```bash
+cd johachisi-redesign
+```
+
+Install the dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server:
+Run the development server
 
 ```bash
 npm run dev
 ```
 
-Build the project:
+Build the production version
 
 ```bash
 npm run build
@@ -107,14 +110,23 @@ npm run build
 
 ---
 
+## 💡 What I Learned
+
+While building this project I gained more experience working with:
+
+- Creating reusable React components
+- Building responsive layouts with Tailwind CSS
+- Using TypeScript in a React application
+- Structuring a project for maintainability
+- Adding animations with Framer Motion
+- Deploying applications with Vercel
+- Managing source control with Git and GitHub
+
+---
+
 ## 📸 Screenshots
 
-You can add screenshots of:
-
-- Hero Section
-- Services Section
-- Projects Section
-- Contact Section
+Screenshots will be added soon.
 
 ---
 
@@ -122,10 +134,16 @@ You can add screenshots of:
 
 **Gareth Maleka Motloutsi**
 
-- GitHub: https://github.com/GarethMalekaMotloutsi
+Bachelor of Computer and Information Sciences in Application Development
+
+GitHub:
+https://github.com/GarethMalekaMotloutsi
+
+LinkedIn:
+(Add your LinkedIn profile here if you'd like.)
 
 ---
 
 ## 📄 License
 
-This project was created for educational and portfolio purposes.
+This project was developed for educational and portfolio purposes.
