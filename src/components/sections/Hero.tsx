@@ -1,72 +1,95 @@
+import { motion } from "framer-motion";
+import { HiArrowRight } from "react-icons/hi";
 import heroImage from "../../assets/images/hero.png";
 
 function Hero() {
   return (
-    <section className="bg-slate-900 text-white">
-      <div className="mx-auto grid min-h-[90vh] max-w-7xl items-center gap-20 px-6 py-24 lg:grid-cols-[1.1fr_0.9fr]">
-        <div>
-          <span className="inline-block rounded-full bg-amber-500 px-4 py-2 text-sm font-semibold text-slate-900">
+    <section className="bg-slate-950 pt-10 pb-20">
+      <div className="mx-auto max-w-7xl px-6">
+
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-10 text-center"
+        >
+          <span className="inline-block rounded-full bg-amber-500/15 px-4 py-2 text-sm font-semibold text-amber-400">
             Trusted Construction Partner
           </span>
 
-          <h1 className="mt-6 max-w-xl text-5xl font-extrabold leading-tight tracking-tight lg:text-6xl">
-            Building Quality Spaces Across South Africa
+          <h1 className="mx-auto mt-6 max-w-5xl text-5xl font-extrabold leading-tight text-white lg:text-7xl">
+            Building South Africa's Future
           </h1>
 
-          <p className="mt-6 max-w-lg text-lg leading-8 text-slate-300">
-            Johachisi Construction provides reliable construction,
-            renovation, maintenance and infrastructure services with a
-            strong focus on quality workmanship, safety and client
-            satisfaction.
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            Johachisi Construction delivers dependable construction,
+            renovation and infrastructure solutions with a commitment to
+            quality workmanship, safety and long-term client relationships.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex justify-center gap-5">
             <a
               href="#contact"
-              className="rounded-lg bg-amber-500 px-6 py-3 font-semibold text-slate-900 transition hover:bg-amber-400"
+              className="flex items-center gap-2 rounded-full bg-amber-500 px-7 py-4 font-semibold text-slate-900 transition hover:bg-amber-400"
             >
-              Request a Quote
+              Request Quote
+              <HiArrowRight />
             </a>
 
             <a
               href="#services"
-              className="rounded-lg border border-white px-6 py-3 font-semibold transition hover:bg-white hover:text-slate-900"
+              className="rounded-full border border-slate-600 px-7 py-4 font-semibold text-white transition hover:border-amber-500 hover:text-amber-400"
             >
-              Our Services
+              Explore Services
             </a>
           </div>
+        </motion.div>
 
-          <div className="mt-12 flex flex-wrap gap-10">
-            <div>
-              <p className="text-3xl font-bold text-amber-400">Construction</p>
-              <p className="mt-1 text-sm text-slate-300">
-                Residential & Commercial
-              </p>
-            </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="overflow-hidden rounded-[28px] shadow-2xl"
+        >
+          <img
+            src={heroImage}
+            alt="Johachisi Construction"
+            className="h-[620px] w-full object-cover"
+          />
+        </motion.div>
 
-            <div>
-              <p className="text-3xl font-bold text-amber-400">Quality</p>
-              <p className="mt-1 text-sm text-slate-300">
-                Workmanship You Can Trust
-              </p>
-            </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-xl font-bold text-amber-400">
+              Residential
+            </h3>
 
-            <div>
-              <p className="text-3xl font-bold text-amber-400">Safety</p>
-              <p className="mt-1 text-sm text-slate-300">
-                Every Project, Every Time
-              </p>
-            </div>
+            <p className="mt-2 text-slate-300">
+              Building quality homes and residential developments.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-xl font-bold text-amber-400">
+              Commercial
+            </h3>
+
+            <p className="mt-2 text-slate-300">
+              Reliable construction solutions for businesses and industry.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-xl font-bold text-amber-400">
+              Infrastructure
+            </h3>
+
+            <p className="mt-2 text-slate-300">
+              Delivering projects with safety, quality and professionalism.
+            </p>
           </div>
         </div>
 
-        <div>
-          <img
-            src={heroImage}
-            alt="Johachisi Construction team working on site"
-            className="h-[560px] w-full rounded-3xl object-cover shadow-2xl"
-          />
-        </div>
       </div>
     </section>
   );
