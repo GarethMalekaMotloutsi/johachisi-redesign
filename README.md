@@ -1,75 +1,131 @@
-# React + TypeScript + Vite
+# 🏗️ Johachisi Construction Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+### A modern, responsive construction company website built with React, TypeScript, Vite and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live Demo:** https://YOUR-VERCEL-LINK.vercel.app
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📖 Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Johachisi Construction Website is a modern corporate website developed to showcase the company's construction services, completed projects, and contact information. The application focuses on providing a professional online presence while demonstrating modern front-end development practices.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This project was developed using React, TypeScript, Vite and Tailwind CSS as part of my software development portfolio.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Features
 
+- Responsive design for desktop, tablet and mobile devices
+- Modern landing page with animated hero section
+- About section introducing the company
+- Services section highlighting construction expertise
+- Featured projects portfolio
+- Contact section with company information
+- Professional footer with quick navigation
+- Smooth scrolling navigation
+- Modern UI with Framer Motion animations
+
+---
+
+## 🛠️ Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Icons
+
+---
+
+## 📂 Project Structure
+
+```text
+src
+│
+├── assets
+│   └── images
+│
+├── components
+│   ├── layout
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   └── MainLayout.tsx
+│   │
+│   └── sections
+│       ├── Hero.tsx
+│       ├── About.tsx
+│       ├── Services.tsx
+│       ├── Projects.tsx
+│       └── Contact.tsx
+│
+├── pages
+│   └── Home.tsx
+│
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
 
+```bash
+git clone https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPOSITORY.git
 ```
+
+Navigate into the project:
+
+```bash
+cd YOUR-REPOSITORY
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+---
+
+## 📸 Screenshots
+
+You can add screenshots of:
+
+- Hero Section
+- Services Section
+- Projects Section
+- Contact Section
+
+---
+
+## 👨‍💻 Author
+
+**Gareth Maleka Motloutsi**
+
+- GitHub: https://github.com/GarethMalekaMotloutsi
+
+---
+
+## 📄 License
+
+This project was created for educational and portfolio purposes.
