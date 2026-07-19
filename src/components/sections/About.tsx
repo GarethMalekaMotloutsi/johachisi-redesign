@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HiShieldCheck, HiWrenchScrewdriver, HiBuildingOffice2 } from "react-icons/hi2";
-import heroImage from "../../assets/images/hero.png";
+import aboutImage from "../../assets/images/about.png";
 
 function About() {
   return (
@@ -16,7 +16,7 @@ function About() {
         >
           <div>
             <img
-              src={heroImage}
+              src={aboutImage}
               alt="Johachisi Construction"
               className="h-[520px] w-full rounded-3xl object-cover shadow-xl"
             />

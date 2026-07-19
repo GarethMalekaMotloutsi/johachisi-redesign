@@ -1,22 +1,30 @@
 import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
-import heroImage from "../../assets/images/hero.png";
+import project1 from "../../assets/images/Projects/Project1.png";
+import project2 from "../../assets/images/Projects/Project2.png";
+import project3 from "../../assets/images/Projects/Project3.png";
 
 const projects = [
   {
     title: "Commercial Development",
     category: "Commercial",
-    image: heroImage,
+    image: project1,
+    description:
+      "Construction of modern commercial facilities designed for durability, efficiency and long-term business growth.",
   },
   {
     title: "Residential Estate",
     category: "Residential",
-    image: heroImage,
+    image: project2,
+    description:
+      "Quality residential developments built with attention to detail, safety and exceptional workmanship.",
   },
   {
     title: "Infrastructure Project",
     category: "Infrastructure",
-    image: heroImage,
+    image: project3,
+    description:
+      "Reliable civil and infrastructure projects delivered on schedule while maintaining the highest construction standards.",
   },
 ];
 
@@ -71,8 +79,7 @@ function Projects() {
                 </h3>
 
                 <p className="mt-4 leading-7 text-slate-600">
-                  Professional construction delivered with a focus on quality,
-                  safety and long-term value.
+                   {project.description}
                 </p>
 
                 <button className="mt-6 flex items-center gap-2 font-semibold text-amber-600 hover:text-amber-700">

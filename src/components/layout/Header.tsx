@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi";
 
@@ -9,6 +10,37 @@ const links = [
 ];
 
 function Header() {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = links.map((link) =>
+      document.querySelector(link.href)
+    );
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(`#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+      }
+    );
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <motion.header
       initial={{ y: -80 }}
@@ -18,8 +50,7 @@ function Header() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-
-        <div>
+        <a href="#" className="cursor-pointer">
           <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
             Johachisi
           </h1>
@@ -27,17 +58,20 @@ function Header() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-600">
             Construction
           </p>
-        </div>
+        </a>
 
         {/* Navigation */}
-
         <nav>
-          <ul className="flex items-center gap-10">
+          <ul className="flex items-center gap-12">
             {links.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="font-medium text-slate-700 transition duration-300 hover:text-amber-600"
+                  className={`text-[15px] font-semibold transition duration-300 ${
+                    activeSection === link.href
+                      ? "text-amber-600"
+                      : "text-slate-700 hover:text-amber-600"
+                  }`}
                 >
                   {link.name}
                 </a>
@@ -47,7 +81,6 @@ function Header() {
         </nav>
 
         {/* CTA */}
-
         <a
           href="#contact"
           className="flex items-center gap-2 rounded-full bg-amber-500 px-6 py-3 font-semibold text-slate-900 transition duration-300 hover:-translate-y-1 hover:bg-amber-400"
